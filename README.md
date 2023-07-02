@@ -37,6 +37,17 @@ We welcome contributions from the community to enhance and improve WolfLib. If y
 
 Please ensure that your contributions align with the project's coding style and follow best practices. Check the [Issues](https://github.com/NE1W01F/WolfLib/issues) page for open issues and consider addressing them as well.
 
+## TODO
+- Add Spoof Parent Process to Memory.h
+- Add Spoof PEB to Memory.h
+- Add List of AV DLLs and Unload them
+- Add Registry Functions to Function.h
+- Make Project more Portable (ie MSVC, CMAKE and other compilers)
+- Add Function Hash search to Function.h
+
+## What can you do with it?
+Well WolfLib helps with making shellcode loaders or with lowering your imports. It is also kinda small so it helps with making small stubs
+
 ## License
 WolfLib is released under the [GNU Lesser General Public License (LGPLv3)](https://www.gnu.org/licenses/lgpl-3.0.en.html). See the [LICENSE](LICENSE) file for more details.
 
