@@ -21,7 +21,7 @@ WolfLib - StealthAPI is a powerful Windows API function discovery library that a
 2. Include the necessary WolfLib files (`header files`, `source files`, `assembly files`) in your project.
 3. Follow the specific integration instructions provided in the documentation.
 
-For detailed installation instructions and examples, refer to the [Documentation](https://github.com/your-username/WolfLib/wiki).
+For detailed installation instructions and examples, refer to the [Documentation](https://github.com/NE1W01F/WolfLib/wiki).
 
 ## Contributing
 We welcome contributions from the community to enhance and improve WolfLib - StealthAPI. If you'd like to contribute, please follow these steps:
@@ -32,12 +32,12 @@ We welcome contributions from the community to enhance and improve WolfLib - Ste
 4. Push to the branch: `git push origin feature/your-feature-name`.
 5. Open a pull request, describing your changes in detail.
 
-Please ensure that your contributions align with the project's coding style and follow best practices. Check the [Issues](https://github.com/your-username/WolfLib/issues) page for open issues and consider addressing them as well.
+Please ensure that your contributions align with the project's coding style and follow best practices. Check the [Issues](https://github.com/NE1W01F/WolfLib/issues) page for open issues and consider addressing them as well.
 
 ## License
 WolfLib - StealthAPI is released under the [GNU Lesser General Public License (LGPLv3)](https://www.gnu.org/licenses/lgpl-3.0.en.html). See the [LICENSE](LICENSE) file for more details.
 
 ## Support
-For any questions, suggestions, or issues, please [open an issue](https://github.com/your-username/WolfLib/issues) or join the discussion in the [community chat](https://gitter.im/your-username/WolfLib).
+For any questions, suggestions, or issues, please [open an issue](https://github.com/NE1W01F/WolfLib/issues) or join the discussion in the [community chat](https://gitter.im/NE1W01F/WolfLib).
 
 Let's collaborate and make WolfLib - StealthAPI a powerful tool for hiding Windows API function usage together!
