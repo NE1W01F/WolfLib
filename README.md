@@ -13,7 +13,7 @@ WolfLib  is a Windows API function discovery library that allows you to hide you
 - Comprehensive Function Abstraction: Interact with Windows API functions without exposing their names explicitly, enhancing the security of your application.
 - Lightweight and Easy Integration: Seamless integration into new or existing projects with minimal overhead and efficient execution.
 - Documentation and Examples: Documentation and examples to guide you through the implementation and usage of WolfLib.
-- Active Community and Support: Engage with a vibrant community of developers, share insights, report issues, and contribute to ongoing development.
+- Community and Support: Engage with a vibrant community of developers, share insights, report issues, and contribute to ongoing development.
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/NE1W01F/WolfLib.git`
