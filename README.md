@@ -1,8 +1,8 @@
 # WolfLib - StealthAPI: Hide Your Function Usage
 
 [![License](https://img.shields.io/badge/License-GNU%20LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0.en.html)
-[![GitHub Issues](https://img.shields.io/github/issues/your-username/WolfLib.svg)](https://github.com/your-username/WolfLib/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/your-username/WolfLib.svg)](https://github.com/your-username/WolfLib/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/NE1W01F/WolfLib.svg)](https://github.com/NE1W01F/WolfLib/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/NE1W01F/WolfLib.svg)](https://github.com/NE1W01F/WolfLib/pulls)
 
 ## Description
 WolfLib - StealthAPI is a powerful Windows API function discovery library that allows you to hide your usage of Windows API functions. It provides advanced techniques to obfuscate your code, making it difficult for reverse engineers to detect and analyze your function invocations.
