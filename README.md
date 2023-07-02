@@ -5,7 +5,7 @@
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/NE1W01F/WolfLib.svg)](https://github.com/NE1W01F/WolfLib/pulls)
 
 ## Description
-WolfLib - StealthAPI is a powerful Windows API function discovery library that allows you to hide your usage of Windows API functions. It provides advanced techniques to obfuscate your code, making it difficult for reverse engineers to detect and analyze your function invocations.
+WolfLib  is a Windows API function discovery library that allows you to hide your usage of Windows API functions. It provides advanced techniques to obfuscate your code, making it difficult for reverse engineers to detect and analyze your function invocations.
 
 ## Features
 - Hidden Function Address Discovery: WolfLib uses intelligent algorithms to dynamically discover function addresses, hiding your direct usage of Windows API functions.
