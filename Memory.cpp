@@ -25,7 +25,7 @@ bool Memory::UnHookDLL(WCHAR* filePath)
     Function::call::closehandle(dllFile);
     Function::call::closehandle(dllMapping);
 
-	return true;
+    return true;
 }
 
 bool Memory::BypassAmsi()
