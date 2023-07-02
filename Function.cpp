@@ -32,9 +32,6 @@ namespace Function {
 
 bool Function::Init_Setup()
 {
-
-    // encrypted with https://www.stringencrypt.com (v1.4.0) [C/C++]
-    // kernel32 = "C:\\Windows\\System32\\kernel32.dll"
     wchar_t kernel32[33] = { 0x27ED, 0x19ED, 0xE0AC, 0xC1AC, 0xAC6C, 0x8BEC, 0x6DAC, 0x4AAC,
                              0x28EC, 0x082C, 0xEEAB, 0xC0AB, 0x966B, 0x772B, 0x57AB, 0x4A2B,
                              0x286B, 0x062B, 0xE62A, 0xCCEA, 0xA8EA, 0x89AA, 0x552A, 0x366A,
