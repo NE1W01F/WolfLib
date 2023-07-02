@@ -17,7 +17,7 @@ WolfLib - StealthAPI is a powerful Windows API function discovery library that a
 - Active Community and Support: Engage with a vibrant community of developers, share insights, report issues, and contribute to ongoing development.
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/your-username/WolfLib.git`
+1. Clone the repository: `git clone https://github.com/NE1W01F/WolfLib.git`
 2. Include the necessary WolfLib files (`header files`, `source files`, `assembly files`) in your project.
 3. Follow the specific integration instructions provided in the documentation.
 
