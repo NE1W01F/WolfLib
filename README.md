@@ -8,12 +8,11 @@
 WolfLib - StealthAPI is a powerful Windows API function discovery library that allows you to hide your usage of Windows API functions. It provides advanced techniques to obfuscate your code, making it difficult for reverse engineers to detect and analyze your function invocations.
 
 ## Features
-- Hidden Function Address Discovery: StealthAPI uses intelligent algorithms to dynamically discover function addresses, hiding your direct usage of Windows API functions.
-- Runtime Function Resolution: Resolve function addresses at runtime for optimal performance and compatibility across different Windows versions and configurations.
+- Hidden Function Address Discovery: WolfLib uses intelligent algorithms to dynamically discover function addresses, hiding your direct usage of Windows API functions.
+- Runtime Function Resolution: Resolve function addresses at runtime for optimal performance and compatibility.
 - Comprehensive Function Abstraction: Interact with Windows API functions without exposing their names explicitly, enhancing the security of your application.
 - Lightweight and Easy Integration: Seamless integration into new or existing projects with minimal overhead and efficient execution.
-- Language-Agnostic Design: Suitable for projects written in various programming languages, allowing you to leverage StealthAPI's capabilities across different platforms.
-- Extensive Documentation and Examples: Comprehensive documentation and examples to guide you through the implementation and usage of StealthAPI.
+- Documentation and Examples: Documentation and examples to guide you through the implementation and usage of WolfLib.
 - Active Community and Support: Engage with a vibrant community of developers, share insights, report issues, and contribute to ongoing development.
 
 ## Installation
@@ -24,7 +23,7 @@ WolfLib - StealthAPI is a powerful Windows API function discovery library that a
 For detailed installation instructions and examples, refer to the [Documentation](https://github.com/NE1W01F/WolfLib/wiki).
 
 ## Contributing
-We welcome contributions from the community to enhance and improve WolfLib - StealthAPI. If you'd like to contribute, please follow these steps:
+We welcome contributions from the community to enhance and improve WolfLib. If you'd like to contribute, please follow these steps:
 
 1. Fork the repository.
 2. Create a new branch: `git checkout -b feature/your-feature-name`.
@@ -35,9 +34,9 @@ We welcome contributions from the community to enhance and improve WolfLib - Ste
 Please ensure that your contributions align with the project's coding style and follow best practices. Check the [Issues](https://github.com/NE1W01F/WolfLib/issues) page for open issues and consider addressing them as well.
 
 ## License
-WolfLib - StealthAPI is released under the [GNU Lesser General Public License (LGPLv3)](https://www.gnu.org/licenses/lgpl-3.0.en.html). See the [LICENSE](LICENSE) file for more details.
+WolfLib is released under the [GNU Lesser General Public License (LGPLv3)](https://www.gnu.org/licenses/lgpl-3.0.en.html). See the [LICENSE](LICENSE) file for more details.
 
 ## Support
 For any questions, suggestions, or issues, please [open an issue](https://github.com/NE1W01F/WolfLib/issues) or join the discussion in the [community chat](https://gitter.im/NE1W01F/WolfLib).
 
-Let's collaborate and make WolfLib - StealthAPI a powerful tool for hiding Windows API function usage together!
+Let's collaborate and make WolfLib a tool for hiding Windows API function usage together!
