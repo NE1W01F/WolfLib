@@ -9,6 +9,7 @@ WolfLib  is a Windows API function discovery library that allows you to hide you
 
 ## Proof that it Bypasses AV
 The file uses my library.
+
 [Antiscan.me](https://antiscan.me/scan/new/result?id=KWCXQRkLSKBB)
 
 ## Features
