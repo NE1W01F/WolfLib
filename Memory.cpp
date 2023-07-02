@@ -2,13 +2,13 @@
 
 bool Memory::UnHookDLL(WCHAR* filePath)
 {
-	LPVOID ntdllBase = (LPVOID)Function::pGetModuleHandle(filePath);
-	HANDLE ntdllFile = Function::call::createFileW(filePath, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL);
-	HANDLE ntdllMapping = Function::call::createFileMappingW(ntdllFile, NULL, PAGE_READONLY | SEC_IMAGE, 0, 0, NULL);
-	LPVOID ntdllMappingAddress = Function::call::mapViewOfFile(ntdllMapping, FILE_MAP_READ, 0, 0, 0);
+	LPVOID dllBase = (LPVOID)Function::pGetModuleHandle(filePath);
+	HANDLE dllFile = Function::call::createFileW(filePath, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL);
+	HANDLE dllMapping = Function::call::createFileMappingW(ntdllFile, NULL, PAGE_READONLY | SEC_IMAGE, 0, 0, NULL);
+	LPVOID dllMappingAddress = Function::call::mapViewOfFile(ntdllMapping, FILE_MAP_READ, 0, 0, 0);
 
-	PIMAGE_DOS_HEADER hookedDosHeader = (PIMAGE_DOS_HEADER)ntdllBase;
-	PIMAGE_NT_HEADERS hookedNtHeader = (PIMAGE_NT_HEADERS)((DWORD_PTR)ntdllBase + hookedDosHeader->e_lfanew);
+	PIMAGE_DOS_HEADER hookedDosHeader = (PIMAGE_DOS_HEADER)dllBase;
+	PIMAGE_NT_HEADERS hookedNtHeader = (PIMAGE_NT_HEADERS)((DWORD_PTR)dllBase + hookedDosHeader->e_lfanew);
     char text_sec[] = { '.', 't', 'e', 'x', 't', 0};
 
 	for (WORD i = 0; i < hookedNtHeader->FileHeader.NumberOfSections; i++) {
@@ -16,14 +16,14 @@ bool Memory::UnHookDLL(WCHAR* filePath)
 
 		if (!Function::_strcmp((char*)hookedSectionHeader->Name, text_sec)) {
 			DWORD oldProtection = 0;
-			bool isProtected = Function::call::virtualProtect((LPVOID)((DWORD_PTR)ntdllBase + (DWORD_PTR)hookedSectionHeader->VirtualAddress), hookedSectionHeader->Misc.VirtualSize, PAGE_EXECUTE_READWRITE, &oldProtection);
-			Function::Memcpy((LPVOID)((DWORD_PTR)ntdllBase + (DWORD_PTR)hookedSectionHeader->VirtualAddress), (LPVOID)((DWORD_PTR)ntdllMappingAddress + (DWORD_PTR)hookedSectionHeader->VirtualAddress), hookedSectionHeader->Misc.VirtualSize);
-			isProtected = Function::call::virtualProtect((LPVOID)((DWORD_PTR)ntdllBase + (DWORD_PTR)hookedSectionHeader->VirtualAddress), hookedSectionHeader->Misc.VirtualSize, oldProtection, &oldProtection);
+			bool isProtected = Function::call::virtualProtect((LPVOID)((DWORD_PTR)dllBase + (DWORD_PTR)hookedSectionHeader->VirtualAddress), hookedSectionHeader->Misc.VirtualSize, PAGE_EXECUTE_READWRITE, &oldProtection);
+			Function::Memcpy((LPVOID)((DWORD_PTR)dllBase + (DWORD_PTR)hookedSectionHeader->VirtualAddress), (LPVOID)((DWORD_PTR)dllMappingAddress + (DWORD_PTR)hookedSectionHeader->VirtualAddress), hookedSectionHeader->Misc.VirtualSize);
+			isProtected = Function::call::virtualProtect((LPVOID)((DWORD_PTR)dllBase + (DWORD_PTR)hookedSectionHeader->VirtualAddress), hookedSectionHeader->Misc.VirtualSize, oldProtection, &oldProtection);
 		}
 	}
 
-    Function::call::closehandle(ntdllFile);
-    Function::call::closehandle(ntdllMapping);
+    Function::call::closehandle(dllFile);
+    Function::call::closehandle(dllMapping);
 
 	return true;
 }
